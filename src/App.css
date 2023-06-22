@@ -393,10 +393,8 @@ form {
 
 	.about--imgs {
 		animation: none;
-		/* background-position: center; */
 		background-size: 130% 110%;
 		transform: translate(-40px, -80px);
-		margin-bottom: -20px;
 	}
 
 	.developer {
