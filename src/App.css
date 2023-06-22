@@ -323,6 +323,14 @@ form {
 	color: #00adb5;
 	font-weight: bold;
 }
+
+.my-works {
+	height: 70vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
 .cards-container > div {
 	display: flex;
 	flex-direction: row;
