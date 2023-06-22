@@ -196,8 +196,11 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	color: #ffff;
-	width: 100vw;
+	width: 90vw;
+	height: 100vh;
 	padding: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
 	padding-top: 100px;
 	padding-bottom: 0px;
 }
@@ -252,6 +255,7 @@ form {
 	justify-content: space-between;
 	color: #eeeeee;
 	width: 90vw;
+	height: 100vh;
 	margin: 0 auto;
 	margin-top: 50px;
 }
@@ -262,6 +266,7 @@ form {
 
 .about--content {
 	width: 400px;
+	margin: 0 auto;
 }
 
 .about--content img:nth-of-type(1) {
