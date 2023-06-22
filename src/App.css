@@ -45,7 +45,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	/* margin-bottom: 100px; */
+	margin-bottom: 100px;
 }
 
 .home--container h1 {
@@ -95,6 +95,8 @@ header {
 	background-repeat: no-repeat;
 	background-position: bottom center;
 	background-size: 150%;
+	transform: translateY(40px);
+	border-radius: 30px;
 }
 
 /* -----------------FOOTER--------------- */
