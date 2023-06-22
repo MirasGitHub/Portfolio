@@ -31,13 +31,13 @@ header {
 	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
-#line {
-	height: 110vh;
+/* #line {
+	height: 140vh;
 	width: 1px;
 	background-color: #eeeeee32;
 	position: absolute;
 	left: 30%;
-}
+} */
 
 /* -------------------------HOME COMPONENT------------------ */
 
@@ -45,6 +45,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
+	margin-bottom: 100px;
 }
 
 .home--container h1 {
@@ -105,7 +106,8 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transform: translateY(50%);
+	border-top: 1px solid #eeeeee32;
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 #footer > div {
@@ -113,7 +115,7 @@ header {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
-	height: 250px;
+	height: 150px;
 	width: 700px;
 }
 
@@ -302,6 +304,7 @@ form {
 
 .projects {
 	background: url("./assets/doodle\ items\ \(1\).png");
+	background-position: center center;
 	height: 100vh;
 	margin: 0 auto;
 	text-align: center;
@@ -321,6 +324,7 @@ form {
 	gap: 10px;
 	flex-wrap: nowrap;
 	overflow-x: scroll;
+	padding-bottom: 10px;
 }
 
 .cards-container {
@@ -372,6 +376,10 @@ form {
 		flex-direction: column;
 	}
 
+	.projects {
+		margin-bottom: 1050px;
+	}
+
 	.about--content {
 		width: 280px;
 	}
@@ -394,6 +402,10 @@ form {
 		overflow-x: hidden;
 	}
 
+	#card {
+		width: 270px;
+	}
+
 	.contact-container,
 	#form,
 	.contact--form,
@@ -404,6 +416,19 @@ form {
 		justify-content: space-between;
 	}
 
+	.home--container {
+		flex-direction: column;
+		width: 180px;
+		align-items: center;
+		justify-content: space-between;
+		margin: 20px auto;
+	}
+
+	.home--container .img-container img {
+		width: 200px;
+		transform: translate(-50px, 80px);
+	}
+
 	.contact-imgs img:nth-child(1) {
 		display: none;
 	}
@@ -412,7 +437,21 @@ form {
 		margin-bottom: 20px;
 	}
 
+	.contact--header {
+		margin-top: -160px;
+	}
+
 	#footer {
-		display: none;
+		height: 300px;
+		margin: 0 auto;
+	}
+
+	#footer > div {
+		height: 150px;
+		width: 270px;
+	}
+
+	#footer nav {
+		width: 250px;
 	}
 }
