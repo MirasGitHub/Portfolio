@@ -1,21 +1,418 @@
-#sidebar a.active {
+#navbar a.active {
 	font-weight: bold;
 }
 
-#sidebar a {
+#navbar a {
 	text-decoration: none;
 	margin: 10px 10px 0 10px;
-	color: #495159;
+	color: #eeeeee;
 }
 
-#sidebar a:hover {
-	background-color: #495159;
-	color: #fff;
-	border-radius: 2px;
+#navbar a:hover {
+	border-bottom: 1px solid #eeeeee;
+	padding-bottom: 5px;
 }
 
-#sidebar {
+#navbar {
 	display: flex;
-	justify-content: flex-end;
-	margin-right: 20px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+#logo img {
+	width: 80px;
+	height: 50px;
+}
+
+header {
+	height: 90px;
+	border-bottom: 1px solid #eeeeee32;
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+#line {
+	height: 110vh;
+	width: 1px;
+	background-color: #eeeeee32;
+	position: absolute;
+	left: 30%;
+}
+
+/* -------------------------HOME COMPONENT------------------ */
+
+.home--container {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.home--container h1 {
+	font-size: 56px;
+	font-weight: bold;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.home--container h1 span,
+.contact--header h1 span {
+	color: #00adb5;
+}
+
+.heading {
+	position: relative;
+}
+
+.heading img {
+	position: absolute;
+	top: 40px;
+	left: -70px;
+	height: 160px;
+}
+
+.home--container button {
+	background-color: #00adb5;
+	border-radius: 32px;
+	padding: 7px 10px;
+	border: none;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.home--container button:hover {
+	background-color: #058087;
+}
+
+.img-container img {
+	width: 280px;
+	margin-top: 30px;
+	transform: translate(-90px, 150px);
+}
+
+.img-container {
+	background: url("./assets/doodles\ mixed\ round.svg");
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: 120%;
+}
+
+/* -----------------FOOTER--------------- */
+
+#footer {
+	height: 200px;
+	width: 100vw;
+	color: #eeeeee;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: translateY(50%);
+}
+
+#footer > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	height: 250px;
+	width: 700px;
+}
+
+#footer nav {
+	display: flex;
+	justify-content: space-between;
+	width: 400px;
+}
+
+#footer nav a {
+	text-decoration: none;
+	color: #eeeeee;
+}
+
+#footer nav a:hover {
+	border-bottom: 1px solid #eeeeee;
+}
+
+#footer p {
+	color: #eeeeeebd;
+	justify-self: flex-end;
+	align-self: flex-end;
+}
+
+.social-media {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 260px;
+	margin: 0 auto;
+}
+
+.social-media a button {
+	border-radius: 50%;
+	background-color: #393e46;
+	border: none;
+	width: 35px;
+	height: 35px;
+}
+
+.social-media a button:hover {
+	background-color: #50555d;
+}
+
+/* ---------------Contact Component-------------- */
+#keyboard {
+	transform: translate(800px, 70px);
+}
+
+#envelope {
+	transform: translate(1100px, 10px);
+}
+
+.contact--header {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 600px;
+	height: 508px;
+	padding-left: 20px;
+}
+
+.contact-imgs img:nth-child(2) {
+	width: 250px;
+}
+.contact-imgs {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 500px;
+}
+
+.contact-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #ffff;
+	width: 100vw;
+	padding: 20px;
+	padding-top: 100px;
+	padding-bottom: 0px;
+}
+
+.contact--form {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 600px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 600px;
+	height: 508px;
+}
+
+#message {
+	height: 230px;
+}
+
+.message-btn {
+	background-color: #00adb5;
+	border-radius: 30px;
+	padding: 3px 20px;
+	border: none;
+	color: #ffffff;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.message-btn p {
+	transform: translateY(7px);
+}
+
+.contact--header h1,
+.my-works h1 {
+	font-size: 56px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+/*--------------------- about ------------------- */
+
+.about {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #eeeeee;
+	width: 90vw;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.about--content img {
+	max-width: 50px;
+}
+
+.about--content {
+	width: 400px;
+}
+
+.about--content img:nth-of-type(1) {
+	transform: translate(0px, -280px);
+}
+
+.about--content img:nth-of-type(2) {
+	transform: translate(190px, -250px);
+}
+
+.about--content span {
+	color: #00adb5;
+	font-weight: bold;
+}
+
+.about--imgs {
+	background-image: url("./assets/Stars.svg"),
+		url("./assets/Background_1\ 1.jpg");
+	background-repeat: no-repeat, no-repeat;
+	background-position: center, center;
+	border-radius: 30px;
+
+	margin: auto;
+	animation: 2s linear 1s infinite alternate blinking;
+}
+
+@keyframes blinking {
+	0% {
+		background-image: url("./assets/Stars.svg"),
+			url("./assets/Background+Transparent.svg");
+
+		background-size: 120%, cover;
+		background-position: center center;
+	}
+
+	100% {
+		background-size: 130%, cover;
+	}
+}
+
+/* -------------Projects------------------ */
+
+.projects {
+	background: url("./assets/doodle\ items\ \(1\).png");
+	height: 100vh;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 20px;
+	color: #eeeeee;
+}
+
+.my-works span {
+	color: #00adb5;
+	font-weight: bold;
+}
+.cards-container > div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+	flex-wrap: nowrap;
+	overflow-x: scroll;
+}
+
+.cards-container {
+	width: 90vw;
+	margin: 0 auto;
+}
+
+.cards-container a {
+	text-decoration: none;
+	color: #eeeeee;
+}
+
+.cards-container a:hover {
+	color: #eeeeee;
+}
+
+#card {
+	background-color: #393e4680;
+	width: 368px;
+	height: 280px;
+	border-radius: 3px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #eeeeee;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#card:hover {
+	background-color: #393e46a5;
+	cursor: pointer;
+}
+
+.cover-img {
+	width: 170px;
+	height: 150px;
+}
+
+@media (max-width: 768px) {
+	.my-works h1,
+	.about h1,
+	.contact-container h1,
+	.heading h1 {
+		font-size: 34px;
+	}
+
+	.about {
+		flex-direction: column;
+	}
+
+	.about--content {
+		width: 280px;
+	}
+
+	.about--imgs {
+		animation: none;
+		background-position: center;
+		background-size: 130% 110%;
+	}
+
+	.developer {
+		width: 230px;
+		padding-bottom: 30px;
+	}
+
+	.cards-container > div {
+		flex-direction: column;
+
+		flex-wrap: wrap;
+		overflow-x: hidden;
+	}
+
+	.contact-container,
+	#form,
+	.contact--form,
+	.contact-imgs {
+		flex-direction: column;
+		width: 180px;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	.contact-imgs img:nth-child(1) {
+		display: none;
+	}
+
+	.contact-imgs img:nth-child(2) {
+		margin-bottom: 20px;
+	}
+
+	#footer {
+		display: none;
+	}
 }
