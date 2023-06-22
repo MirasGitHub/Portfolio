@@ -393,8 +393,10 @@ form {
 
 	.about--imgs {
 		animation: none;
-		background-position: center;
+		/* background-position: center; */
 		background-size: 130% 110%;
+		transform: translate(-40px, -80px);
+		margin-bottom: -20px;
 	}
 
 	.developer {
@@ -447,6 +449,14 @@ form {
 
 	.contact--header {
 		margin-top: -160px;
+	}
+
+	.contact-container {
+		margin-bottom: 260px;
+	}
+
+	#message {
+		width: 300px;
 	}
 
 	#footer {
