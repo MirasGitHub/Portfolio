@@ -434,6 +434,7 @@ form {
 	.home--container .img-container img {
 		width: 200px;
 		transform: translate(-50px, 80px);
+		margin-bottom: 40px;
 	}
 
 	.contact-imgs img:nth-child(1) {
@@ -441,7 +442,7 @@ form {
 	}
 
 	.contact-imgs img:nth-child(2) {
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 	}
 
 	.contact--header {
