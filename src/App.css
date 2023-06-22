@@ -45,7 +45,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	margin-bottom: 100px;
+	/* margin-bottom: 100px; */
 }
 
 .home--container h1 {
@@ -85,7 +85,7 @@ header {
 }
 
 .img-container img {
-	width: 280px;
+	width: 380px;
 	margin-top: 30px;
 	transform: translate(-90px, 150px);
 }
@@ -94,7 +94,7 @@ header {
 	background: url("./assets/doodles\ mixed\ round.svg");
 	background-repeat: no-repeat;
 	background-position: bottom center;
-	background-size: 120%;
+	background-size: 150%;
 }
 
 /* -----------------FOOTER--------------- */
@@ -377,7 +377,7 @@ form {
 	}
 
 	.projects {
-		margin-bottom: 1050px;
+		margin-bottom: 1020px;
 	}
 
 	.about--content {
